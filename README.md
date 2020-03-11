@@ -1,10 +1,10 @@
 # firebase-express-hello-world
 
-A simple example and setup guide for using Firebase hosting and Express.
+A simple example and setup guide for using Firebase hosting with Express.
 
 ## About
 
-This is some personal documentation for bootstrapping Firebase Cloud Functions. 
+This is some personal documentation for bootstrapping Firebase Cloud Functions. Specifically, in this example a **HTTP endpoint trigger**. 
 
 ## How to do Firebase functions
 
