@@ -1,0 +1,76 @@
+[debug] [2020-03-11T07:25:59.235Z] ----------------------------------------------------------------------
+[debug] [2020-03-11T07:25:59.238Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\leke\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-03-11T07:25:59.238Z] CLI Version:   7.14.0
+[debug] [2020-03-11T07:25:59.238Z] Platform:      win32
+[debug] [2020-03-11T07:25:59.238Z] Node Version:  v12.16.1
+[debug] [2020-03-11T07:25:59.240Z] Time:          Wed Mar 11 2020 09:25:59 GMT+0200 (GMT+02:00)
+[debug] [2020-03-11T07:25:59.240Z] ----------------------------------------------------------------------
+[debug] [2020-03-11T07:25:59.240Z] 
+[debug] [2020-03-11T07:25:59.249Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-11T07:25:59.250Z] > authorizing via signed-in user
+[debug] [2020-03-11T07:25:59.250Z] [iam] checking project fir-express-hello-world for permissions ["firebase.projects.get"]
+[debug] [2020-03-11T07:25:59.252Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-express-hello-world:testIamPermissions  
+
+[debug] [2020-03-11T07:26:00.332Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-11T07:26:00.336Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/fir-express-hello-world  
+ 
+[debug] [2020-03-11T07:26:00.719Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\leke\dev\firebase-express-hello-world'...
+[info] 
+[warn] !  Your requested "node" version "8" doesn't match your global version "12"
+[info] +  functions: functions emulator started at http://localhost:5000
+[info] i  functions: Watching "C:\Users\leke\dev\firebase-express-hello-world\functions" for Cloud Functions...
+[debug] [2020-03-11T07:26:01.801Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-11T07:26:01.801Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-03-11T07:26:01.801Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-11T07:26:01.802Z] [worker-~diagnostic~-5b09ebcb-f997-453b-be65-5ed5068bc88f]: Assigning socketPath: \\?\pipe\C:\Users\leke\dev\firebase-express-hello-world\functions\5472
+[debug] [2020-03-11T07:26:01.802Z] [worker-~diagnostic~-5b09ebcb-f997-453b-be65-5ed5068bc88f]: BUSY
+[debug] [2020-03-11T07:26:02.306Z] [runtime-status] [5472] Functions runtime initialized. {"cwd":"C:\\Users\\leke\\dev\\firebase-express-hello-world\\functions","node_version":"12.16.1"}
+[debug] [2020-03-11T07:26:02.307Z] [runtime-status] [5472] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-11T07:26:02.311Z] [runtime-status] [5472] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\leke\\dev\\firebase-express-hello-world\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-11T07:26:02.313Z] [runtime-status] [5472] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\leke\\dev\\firebase-express-hello-world\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-11T07:26:02.314Z] [runtime-status] [5472] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\leke\\dev\\firebase-express-hello-world\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[info] +  functions[api]: http function initialized (http://localhost:5000/fir-express-hello-world/us-central1/api).
+[debug] [2020-03-11T07:26:02.546Z] [worker-~diagnostic~-5b09ebcb-f997-453b-be65-5ed5068bc88f]: IDLE
+[debug] [2020-03-11T07:26:18.699Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-11T07:26:18.699Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-11T07:26:18.700Z] Accepted request GET /fir-express-hello-world/us-central1/api --> api
+[debug] [2020-03-11T07:26:18.734Z] [worker-pool] addWorker(api)
+[debug] [2020-03-11T07:26:18.734Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-03-11T07:26:18.734Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-03-11T07:26:18.734Z] [worker-api-9d67084f-3350-42bc-b016-8fd67dfa9c29]: Assigning socketPath: \\?\pipe\C:\Users\leke\dev\firebase-express-hello-world\functions\6176
+[debug] [2020-03-11T07:26:18.735Z] [worker-api-9d67084f-3350-42bc-b016-8fd67dfa9c29]: BUSY
+[debug] [2020-03-11T07:26:19.592Z] [runtime-status] [6176] Functions runtime initialized. {"cwd":"C:\\Users\\leke\\dev\\firebase-express-hello-world\\functions","node_version":"12.16.1"}
+[debug] [2020-03-11T07:26:19.597Z] [runtime-status] [6176] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-11T07:26:19.603Z] [runtime-status] [6176] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\leke\\dev\\firebase-express-hello-world\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-11T07:26:19.605Z] [runtime-status] [6176] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\leke\\dev\\firebase-express-hello-world\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-11T07:26:19.607Z] [runtime-status] [6176] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\leke\\dev\\firebase-express-hello-world\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-11T07:26:19.843Z] [runtime-status] [6176] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-03-11T07:26:19.845Z] [runtime-status] [6176] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-03-11T07:26:19.845Z] [runtime-status] [6176] Running api in mode HTTPS
+[debug] [2020-03-11T07:26:19.850Z] [runtime-status] [6176] Attempting to listen to socketPath: \\?\pipe\C:\Users\leke\dev\firebase-express-hello-world\functions\6176
+[debug] [2020-03-11T07:26:19.856Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-11T07:26:19.878Z] [runtime-status] [6176] Ephemeral server handling GET request
+[debug] [2020-03-11T07:26:19.889Z] [runtime-status] [6176] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-03-11T07:26:19.891Z] [worker-api-9d67084f-3350-42bc-b016-8fd67dfa9c29]: IDLE
+[debug] [2020-03-11T07:26:19.891Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-11T07:26:24.481Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-11T07:26:24.481Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-11T07:26:24.481Z] Accepted request GET /fir-express-hello-world/us-central1/api/test --> api
+[debug] [2020-03-11T07:26:24.481Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-03-11T07:26:24.482Z] [worker-api-9d67084f-3350-42bc-b016-8fd67dfa9c29]: Assigning socketPath: \\?\pipe\C:\Users\leke\dev\firebase-express-hello-world\functions\6176
+[debug] [2020-03-11T07:26:24.482Z] [worker-api-9d67084f-3350-42bc-b016-8fd67dfa9c29]: BUSY
+[debug] [2020-03-11T07:26:24.482Z] [runtime-status] [6176] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-03-11T07:26:24.484Z] [runtime-status] [6176] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-03-11T07:26:24.484Z] [runtime-status] [6176] Running api in mode HTTPS
+[debug] [2020-03-11T07:26:24.484Z] [runtime-status] [6176] Attempting to listen to socketPath: \\?\pipe\C:\Users\leke\dev\firebase-express-hello-world\functions\6176
+[debug] [2020-03-11T07:26:24.486Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-11T07:26:24.493Z] [runtime-status] [6176] Ephemeral server handling GET request
+[debug] [2020-03-11T07:26:24.498Z] [runtime-status] [6176] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-03-11T07:26:24.500Z] [worker-api-9d67084f-3350-42bc-b016-8fd67dfa9c29]: IDLE
+[debug] [2020-03-11T07:26:24.500Z] [work-queue] {"queueLength":0,"workRunningCount":0}
